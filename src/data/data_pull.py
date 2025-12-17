@@ -3,11 +3,9 @@ from requests.exceptions import HTTPError
 from json import JSONDecodeError
 from datetime import datetime
 import world_bank_data as wb
-from tqdm import tqdm
 import polars as pl
 import logging
 import requests
-import ibis
 import os
 
 
@@ -30,7 +28,6 @@ class DataPull:
     ):
         self.saving_dir = saving_dir
         self.data_file = database_file
-        self.conn = ibis.duckdb.connect(f"{self.data_file}")
 
         # Set up logging to log everything
         logging.basicConfig(
