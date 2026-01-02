@@ -5,7 +5,12 @@ description = "Add your description here"
 readme = "README.md"
 authors = [{ name = "Alejandro Ouslan", email = "alejandro.ouslan@upr.edu" }]
 requires-python = ">=3.12"
-dependencies = ["censusforge>=0.3.1"]
+dependencies = [
+    "censusforge>=0.5.0",
+    "polars>=1.36.1",
+    "pyarrow>=22.0.0",
+    "world-bank-data>=0.1.4",
+]
 
 [project.scripts]
 jp-idh = "jp_idh:main"
