@@ -1,2 +1,1 @@
-def main() -> None:
-    print("Hello from jp-idh!")
+from .pr_idh import PRidh

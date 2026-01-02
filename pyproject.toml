@@ -5,9 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 authors = [{ name = "Alejandro Ouslan", email = "alejandro.ouslan@upr.edu" }]
 requires-python = ">=3.12"
-dependencies = [
-    "censusforge>=0.3.1",
-]
+dependencies = ["censusforge>=0.3.1"]
 
 [project.scripts]
 jp-idh = "jp_idh:main"
@@ -17,8 +15,4 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [dependency-groups]
-dev = [
-    "jupyter>=1.1.1",
-    "pre-commit>=4.5.1",
-    "pynvim>=0.6.0",
-]
+dev = ["jupyter>=1.1.1", "pre-commit>=4.5.1", "pynvim>=0.6.0"]

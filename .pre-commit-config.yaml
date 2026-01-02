@@ -12,4 +12,4 @@ repos:
     hooks:
       - id: uv-lock
       - id: uv-export
-        args: [--no-dev, --all-extras]
+        args: [--no-dev, --all-extras, --output-file=requirements.txt]
